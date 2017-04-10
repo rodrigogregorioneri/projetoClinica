@@ -16,6 +16,9 @@
     <build>
         <resources>
             <resource>
+                <directory>src/main/java</directory>
+            </resource>
+            <resource>
                 <directory>src/test/java</directory>
                 <includes>
                     <include>**</include>
@@ -25,7 +28,16 @@
                 </excludes>
             </resource>
             <resource>
-                <directory>src/main/java</directory>
+                <directory>src/main/java/entity</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java/business</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java/dao</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java/rest</directory>
             </resource>
         </resources>
         <plugins>
@@ -57,29 +69,30 @@
         </repository>
     </repositories>
     <dependencies>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter</artifactId>
-    </dependency>
- 
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
-    </dependency>
- 
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.cronospass.resource mimetype="folder/web">src/main/webapp</project.cronospass.resource>
-        <project.cronospass.resource mimetype="folder/servercontext">config</project.cronospass.resource>
-        <project.cronospass.resource mimetype="folder/src">src/test/java</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/src">src/main/java</project.cronospass.resource>
+        <project.cronospass.resource mimetype="folder/src">src/test/java</project.cronospass.resource>
+        <project.cronospass.resource mimetype="folder/web">src/main/webapp</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/libs">lib</project.cronospass.resource>
+        <project.cronospass.resource mimetype="folder/src">src/main/java/entity</project.cronospass.resource>
+        <project.cronospass.resource mimetype="folder/src">src/main/java/business</project.cronospass.resource>
+        <project.cronospass.resource mimetype="folder/src">src/main/java/dao</project.cronospass.resource>
+        <project.cronospass.resource mimetype="folder/src">src/main/java/rest</project.cronospass.resource>
     </properties>
 </project>
