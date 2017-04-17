@@ -1,3 +1,5 @@
+package entity;
+
 /**
  * Classe que representa ...
  * 
