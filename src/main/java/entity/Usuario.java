@@ -1,5 +1,8 @@
 package entity;
 
+import org.hibernate.annotations.DynamicUpdate;
+import org.hibernate.annotations.Entity;
+
 /**
  * Classe que representa ...
  * 
@@ -10,9 +13,10 @@ package entity;
  */
  
  
-
+@DynamicUpdate
 public class Usuario {
 
+private int id;	
 private String nome;
 private String login;
 private String senha;
